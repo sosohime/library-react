@@ -136,6 +136,7 @@ function compile(modules) {
     'source/components/**/*.jsx',
     'source/components/**/*.tsx',
     'source/components/**/*.ts',
+    '!source/components/**/demo.*'
   ];
   const tsResult = gulp.src(source).pipe(ts(tsConfig, {
     error(e) {
